@@ -1,0 +1,23 @@
+<div class="m-4">
+<h2>Destinations</h2>
+    <hr>
+    <div class="row">
+<div  *ngFor="let val of products; index as id ">
+
+
+
+    <div class=" mb-3 col col-12 d-flex align-items-stretch ">
+        <div class="row g-1 container-fluid card shadow-lg bg-card-color">
+        <div class="container-fluid">
+        <div class="card-body">
+        <h5 class="card-title"> {{ val.destination }}</h5>
+        <p class="card-text">{{ val.price | currency }}</p>
+        <button class="btn btn-success" routerLink="details/{{id}}">More Details</button>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
